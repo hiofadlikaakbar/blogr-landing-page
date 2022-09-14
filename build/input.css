@@ -22,6 +22,7 @@ body {
   position: relative;
   background-position: 35%;
   background-repeat: no-repeat;
+  border-bottom-left-radius: 6rem;
 }
 
 .hero::before {

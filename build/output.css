@@ -1100,6 +1100,7 @@ body {
   position: relative;
   background-position: 35%;
   background-repeat: no-repeat;
+  border-bottom-left-radius: 6rem;
 }
 
 .hero::before {
@@ -1261,16 +1262,6 @@ body {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .lg\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
   }
 }
 
