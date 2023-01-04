@@ -28,7 +28,7 @@
 
   <body>
     <!-- header start -->
-    <header
+    <!-- <header
       class="pb-4 bg-transparent absolute left-0 top-0 w-full items-center z-50"
     >
       <div class="container mx-auto left-0 top-0 right-0">
@@ -111,7 +111,6 @@
           </button>
         </div>
 
-        <!-- mobile menu -->
         <div class="lg:hidden">
           <ul
             id="menu"
@@ -181,22 +180,214 @@
           </ul>
         </div>
       </div>
+    </header> -->
+    <header class="w-full absolute z-50">
+      <nav
+        class="w-full bg-transparent container mx-auto left-0 right-0 top-0 py-4 px-4 z-50"
+      >
+        <div
+          class="flex items-center py-2 justify-between px-7 lg:px-10 relative"
+        >
+          <div class="flex space-x-16">
+            <img src="./images/logo.svg" alt="blogr logo" />
+            <ul
+              class="text-white hidden lg:flex font-medium gap-10 items-center text-base capitalize"
+            >
+              <li>
+                <a href="#" id="connect1"
+                  ><span class="hover:border-b-[2.7px] hover:border-white"
+                    >product
+                    <i class="fa-solid arrow1 ml-1 fa-angle-down"></i></span
+                ></a>
+                <ul
+                  id="sub-connect1"
+                  class="capitalize text-base left-36 absolute font-medium hidden flex-col space-y-2 text-vdBlue px-8 mt-5 py-5 rounded-md bg-[#F1F1F1]"
+                >
+                  <li><a href="#" class="hover:font-bold">overview</a></li>
+                  <li><a href="#" class="hover:font-bold">pricing</a></li>
+                  <li><a href="#" class="hover:font-bold">marketplace</a></li>
+                  <li><a href="#" class="hover:font-bold">features</a></li>
+                  <li>
+                    <a href="#" class="hover:font-bold">integrations</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="connect2"
+                  ><span class="hover:border-b-[2.7px] hover:border-white"
+                    >company
+                    <i class="fa-solid arrow2 ml-1 fa-angle-down"></i></span
+                ></a>
+                <ul
+                  id="sub-connect2"
+                  class="capitalize absolute font-medium hidden flex-col space-y-2 text-vdBlue px-8 mt-5 py-5 rounded-md bg-[#F1F1F1]"
+                >
+                  <li><a href="#" class="hover:font-bold">about</a></li>
+                  <li><a href="#" class="hover:font-bold">team</a></li>
+                  <li><a href="#" class="hover:font-bold">blog</a></li>
+                  <li><a href="#" class="hover:font-bold">carrers</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" id="connect3"
+                  ><span class="hover:border-b-[2.7px] hover:border-white"
+                    >connect
+                    <i class="fa-solid arrow3 ml-1 fa-angle-down"></i></span
+                ></a>
+                <ul
+                  id="sub-connect3"
+                  class="capitalize absolute font-medium hidden flex-col space-y-2 text-vdBlue px-8 mt-5 py-5 rounded-md bg-[#F1F1F1]"
+                >
+                  <li><a href="#" class="hover:font-bold">contact</a></li>
+                  <li><a href="#" class="hover:font-bold">newsletter</a></li>
+                  <li><a href="#" class="hover:font-bold">linkedIn</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex">
+            <a href="#" class="text-white font-medium capitalize p-3 px-6 py-2"
+              >login</a
+            >
+            <a
+              href="#"
+              class="font-medium capitalize rounded-full bg-white text-[#FF255D] p-3 px-7 py-3 hover:bg-[#ff7a85] hover:text-white transition duration-150 ease-in"
+              >sign up</a
+            >
+          </div>
+          <button id="burger-menu" class="block lg:hidden focus:outline-none">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt="burger-menu"
+              id="burger-icon"
+            />
+          </button>
+        </div>
+        <div class="lg:hidden">
+          <ul
+            id="menu"
+            class="absolute font-ubuntu z-50 hidden flex-col px-8 rounded-lg items-center py-8 space-y-6 mt-10 left-6 right-6 bg-white drop-shadow-md"
+          >
+            <li class="text-center">
+              <a href="#" id="m-connect1"
+                ><span class="text-lg capitalize font-medium">product </span
+                ><i class="fa-solid m-arrow1 ml-1 text-lRed fa-angle-down"></i
+              ></a>
+            </li>
+            <ul
+              id="m-sub-connect1"
+              class="capitalize hidden text-base left-36 w-full text-center font-medium flex-col space-y-2 text-vdBlue px-8 mt-5 py-5 rounded-md bg-[#F1F1F1]"
+            >
+              <li><a href="#">overview</a></li>
+              <li><a href="#">pricing</a></li>
+              <li><a href="#">marketplace</a></li>
+              <li><a href="#">features</a></li>
+              <li>
+                <a href="#" class="hover:font-bold">integrations</a>
+              </li>
+            </ul>
+            <li class="text-center">
+              <a href="#" id="m-connect2"
+                ><span class="text-lg capitalize font-medium">company </span
+                ><i class="fa-solid m-arrow2 ml-1 text-lRed fa-angle-down"></i
+              ></a>
+            </li>
+            <ul
+              id="m-sub-connect2"
+              class="capitalize hidden text-base left-36 w-full text-center font-medium flex-col space-y-2 text-vdBlue px-8 mt-5 py-5 rounded-md bg-[#F1F1F1]"
+            >
+              <li><a href="#">about</a></li>
+              <li><a href="#">team</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">carrers</a></li>
+            </ul>
+            <li class="text-center">
+              <a href="#" id="m-connect3"
+                ><span class="text-lg capitalize font-medium">connect </span
+                ><i class="fa-solid m-arrow3 ml-1 text-lRed fa-angle-down"></i
+              ></a>
+            </li>
+            <ul
+              id="m-sub-connect3"
+              class="capitalize hidden text-base left-36 w-full text-center font-medium flex-col space-y-2 text-vdBlue px-8 mt-5 py-5 rounded-md bg-[#F1F1F1]"
+            >
+              <li><a href="#">contact</a></li>
+              <li><a href="#">newsletter</a></li>
+              <li><a href="#">linkedIn</a></li>
+            </ul>
+            <div
+              class="flex border-t w-full mt-3 border-black gap-1 flex-col lg:hidden"
+            >
+              <a
+                href="#"
+                class="text-vdBlue mt-5 font-bold font-overpass text-center capitalize p-3 px-6 py-2"
+                >login</a
+              >
+              <a
+                href="#"
+                class="font-medium text-center w-[50%] capitalize text-white rounded-full bg-gradient-to-r mx-auto from-vlRed to-lRed p-3 px-7 py-3"
+                >sign up</a
+              >
+            </div>
+          </ul>
+        </div>
+        <!-- <ul
+            class="hidden lg:flex capitalize space-x-11 xl:space-x-16 2xl:space-x-20"
+          >
+            <li>
+              <a
+                href="#"
+                class="text-dGrayishBlue transition duration-200 ease-in-out hover:text-softRed text-base font-semibold"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-dGrayishBlue transition duration-200 ease-in-out hover:text-softRed text-base font-semibold"
+                >new</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-dGrayishBlue transition duration-200 ease-in-out hover:text-softRed text-base font-semibold"
+                >popular</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-dGrayishBlue transition duration-200 ease-in-out hover:text-softRed text-base font-semibold"
+                >trending</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-dGrayishBlue transition duration-200 ease-in-out hover:text-softRed text-base font-semibold"
+                >categories</a
+              >
+            </li>
+          </ul> -->
+      </nav>
     </header>
-
     <!-- hero start -->
     <section
       class="bg-gradient-to-r w-full rounded-bl-[6rem] from-vlRed to-lRed"
     >
       <div class="hero">
         <div
-          class="max-w-2xl mx-auto top-64 left-0 right-0 absolute px-4 capitalize"
+          class="mx-auto top-64 left-0 right-0 absolute px-4 lg:px-0 capitalize"
         >
           <h1
-            class="text-white mb-5 text-3xl md:text-4xl lg:text-5xl font-bold text-center font-overpass lg:whitespace-nowrap"
+            class="text-white mb-5 text-4xl md:text-5xl lg:text-6xl font-bold text-center font-overpass lg:whitespace-nowrap mx-auto"
           >
             a modern publishing platform
           </h1>
-          <p class="text-white text-center text-lg md:text-xl mb-10">
+          <p
+            class="text-white text-center text-lg md:text-xl lg:text-2xl mb-10"
+          >
             grow your audience and build your online brand
           </p>
 
@@ -217,10 +408,10 @@
     </section>
 
     <!-- Designed start -->
-    <section class="mt-28 pb-32">
+    <section class="mt-28 pb-44">
       <div class="max-w-2xl mx-auto px-5">
         <h1
-          class="text-vdBlue mb-7 text-3xl lg:text-4xl text-center font-extrabold capitalize font-overpass"
+          class="text-vdBlue mb-16 text-3xl xl:text-4xl text-center font-extrabold capitalize font-overpass"
         >
           designed for the future
         </h1>
@@ -235,13 +426,13 @@
           <img
             src="./images/illustration-editor-desktop.svg"
             alt="illustration-editor-desktop"
-            class="mx-auto drop-shadow-2xl mb-14 hidden lg:block translate-x-[14rem] scale-125"
+            class="mx-auto drop-shadow-2xl mb-14 hidden lg:block translate-x-[13rem] scale-125"
           />
         </div>
         <div class="w-full lg:w-1/2">
           <div class="max-w-2xl mx-auto px-10">
             <h1
-              class="text-vdBlue mb-4 text-3xl lg:text-4xl text-center lg:text-left font-extrabold capitalize font-overpass"
+              class="text-vdBlue mb-4 text-3xl xl:text-4xl text-center lg:text-left font-extrabold capitalize font-overpass"
             >
               introducing an extensible editor
             </h1>
@@ -256,7 +447,7 @@
               change the looks of a blog.
             </p>
             <h1
-              class="text-vdBlue mb-4 text-3xl lg:text-4xl lg:text-left text-center font-extrabold capitalize font-overpass"
+              class="text-vdBlue mb-4 text-3xl xl:text-4xl lg:text-left text-center font-extrabold capitalize font-overpass"
             >
               robust content management
             </h1>
@@ -291,12 +482,12 @@
           <div class="-mt-32 z-30">
             <div class="max-w-xl w-full mx-auto px-5 py-6">
               <h1
-                class="text-white mb-4 text-3xl xl:text-left lg:text-4xl text-center font-extrabold capitalize font-overpass"
+                class="text-white mb-4 text-3xl xl:text-4xl text-center lg:text-left font-extrabold capitalize font-overpass"
               >
                 state of the art infrastructure
               </h1>
               <p
-                class="text-center text-white xl:text-left font-overpass text-base lg:text-lg capitalize font-medium"
+                class="text-center lg:text-left text-white font-overpass text-base lg:text-lg capitalize font-medium"
               >
                 With reliability and speed in mind, worldwide data centers
                 provide the backbone for ultra-fast connectivity. this ensures
@@ -327,7 +518,7 @@
         <div class="w-full lg:w-1/2">
           <div class="max-w-2xl mx-auto px-10">
             <h1
-              class="text-vdBlue mb-4 text-3xl lg:text-4xl text-center lg:text-left font-extrabold capitalize font-overpass"
+              class="text-vdBlue mb-4 text-3xl text-center lg:text-left font-extrabold capitalize font-overpass"
             >
               free, open, simple
             </h1>
@@ -342,7 +533,7 @@
               learn.
             </p>
             <h1
-              class="text-vdBlue mb-4 text-3xl lg:text-4xl lg:text-left text-center font-extrabold capitalize font-overpass"
+              class="text-vdBlue mb-4 text-3xl lg:text-left text-center font-extrabold capitalize font-overpass"
             >
               powerful tooling
             </h1>
@@ -363,7 +554,7 @@
       <div
         class="container mx-auto flex lg:justify-around flex-col space-x-0 lg:space-x-20 lg:px-10 xl:space-x-56 lg:flex-row justify-center"
       >
-        <div class="scale-125 mt-3">
+        <div class="mt-3">
           <svg
             width="101"
             class="mx-auto lg:mx-0 mb-14"

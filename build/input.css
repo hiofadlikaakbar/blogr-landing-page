@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  @apply overflow-x-hidden;
+  overflow-x: hidden;
   @apply text-base;
   @apply text-[#4b5862];
 }
@@ -12,7 +12,7 @@ body {
 }
 
 .fixed-nav {
-  @apply fixed bg-gradient-to-r from-vlRed to-lRed;
+  @apply fixed bg-gradient-to-r from-vlRed to-lRed w-full z-50;
 }
 
 .hero {
