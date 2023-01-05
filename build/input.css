@@ -6,9 +6,6 @@ body {
   overflow-x: hidden;
   @apply text-base;
   @apply text-[#4b5862];
-  overflow-x: hidden;
-  @apply text-base;
-  @apply text-[#4b5862];
   width: 100%;
   margin: 0;
   padding: 0;
