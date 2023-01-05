@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,167 +26,11 @@
     <title>Blogr</title>
   </head>
 
-  <body>
-    <!-- header start -->
-    <!-- <header
-      class="pb-4 bg-transparent absolute left-0 top-0 w-full items-center z-50"
-    >
-      <div class="container mx-auto left-0 top-0 right-0">
+  <body class="relative">
+    <header class="w-full absolute left-0 right-0 top-5 z-50">
+      <nav class="bg-transparent container mx-auto py-4 px-4 z-50">
         <div
-          class="flex items-center pt-5 justify-between px-7 lg:px-10 relative"
-        >
-          <div class="flex space-x-16">
-            <img src="./images/logo.svg" alt="blogr logo" />
-            <ul
-              class="text-white hidden lg:flex font-medium gap-10 items-center text-base capitalize"
-            >
-              <li>
-                <a href="#" id="connect1"
-                  ><span class="hover:border-b-[2.7px] hover:border-white"
-                    >product
-                    <i class="fa-solid arrow1 ml-1 fa-angle-down"></i></span
-                ></a>
-                <ul
-                  id="sub-connect1"
-                  class="capitalize text-base left-36 absolute font-medium hidden flex-col space-y-2 text-vdBlue px-8 mt-5 py-5 rounded-md bg-[#F1F1F1]"
-                >
-                  <li><a href="#" class="hover:font-bold">overview</a></li>
-                  <li><a href="#" class="hover:font-bold">pricing</a></li>
-                  <li><a href="#" class="hover:font-bold">marketplace</a></li>
-                  <li><a href="#" class="hover:font-bold">features</a></li>
-                  <li>
-                    <a href="#" class="hover:font-bold">integrations</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" id="connect2"
-                  ><span class="hover:border-b-[2.7px] hover:border-white"
-                    >company
-                    <i class="fa-solid arrow2 ml-1 fa-angle-down"></i></span
-                ></a>
-                <ul
-                  id="sub-connect2"
-                  class="capitalize absolute font-medium hidden flex-col space-y-2 text-vdBlue px-8 mt-5 py-5 rounded-md bg-[#F1F1F1]"
-                >
-                  <li><a href="#" class="hover:font-bold">about</a></li>
-                  <li><a href="#" class="hover:font-bold">team</a></li>
-                  <li><a href="#" class="hover:font-bold">blog</a></li>
-                  <li><a href="#" class="hover:font-bold">carrers</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" id="connect3"
-                  ><span class="hover:border-b-[2.7px] hover:border-white"
-                    >connect
-                    <i class="fa-solid arrow3 ml-1 fa-angle-down"></i></span
-                ></a>
-                <ul
-                  id="sub-connect3"
-                  class="capitalize absolute font-medium hidden flex-col space-y-2 text-vdBlue px-8 mt-5 py-5 rounded-md bg-[#F1F1F1]"
-                >
-                  <li><a href="#" class="hover:font-bold">contact</a></li>
-                  <li><a href="#" class="hover:font-bold">newsletter</a></li>
-                  <li><a href="#" class="hover:font-bold">linkedIn</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="hidden lg:flex">
-            <a href="#" class="text-white font-medium capitalize p-3 px-6 py-2"
-              >login</a
-            >
-            <a
-              href="#"
-              class="font-medium capitalize rounded-full bg-white text-[#FF255D] p-3 px-7 py-3 hover:bg-[#ff7a85] hover:text-white transition duration-150 ease-in"
-              >sign up</a
-            >
-          </div>
-          <button id="burger-menu" class="block lg:hidden focus:outline-none">
-            <img
-              src="./images/icon-hamburger.svg"
-              alt="burger-menu"
-              id="burger-icon"
-            />
-          </button>
-        </div>
-
-        <div class="lg:hidden">
-          <ul
-            id="menu"
-            class="absolute font-ubuntu z-50 hidden flex-col px-8 rounded-lg items-center py-8 space-y-6 mt-10 left-6 right-6 bg-white drop-shadow-md"
-          >
-            <li class="text-center">
-              <a href="#" id="m-connect1"
-                ><span class="text-lg capitalize font-medium">product </span
-                ><i class="fa-solid m-arrow1 ml-1 text-lRed fa-angle-down"></i
-              ></a>
-            </li>
-            <ul
-              id="m-sub-connect1"
-              class="capitalize hidden text-base left-36 w-full text-center font-medium flex-col space-y-2 text-vdBlue px-8 mt-5 py-5 rounded-md bg-[#F1F1F1]"
-            >
-              <li><a href="#">overview</a></li>
-              <li><a href="#">pricing</a></li>
-              <li><a href="#">marketplace</a></li>
-              <li><a href="#">features</a></li>
-              <li>
-                <a href="#" class="hover:font-bold">integrations</a>
-              </li>
-            </ul>
-            <li class="text-center">
-              <a href="#" id="m-connect2"
-                ><span class="text-lg capitalize font-medium">company </span
-                ><i class="fa-solid m-arrow2 ml-1 text-lRed fa-angle-down"></i
-              ></a>
-            </li>
-            <ul
-              id="m-sub-connect2"
-              class="capitalize hidden text-base left-36 w-full text-center font-medium flex-col space-y-2 text-vdBlue px-8 mt-5 py-5 rounded-md bg-[#F1F1F1]"
-            >
-              <li><a href="#">about</a></li>
-              <li><a href="#">team</a></li>
-              <li><a href="#">blog</a></li>
-              <li><a href="#">carrers</a></li>
-            </ul>
-            <li class="text-center">
-              <a href="#" id="m-connect3"
-                ><span class="text-lg capitalize font-medium">connect </span
-                ><i class="fa-solid m-arrow3 ml-1 text-lRed fa-angle-down"></i
-              ></a>
-            </li>
-            <ul
-              id="m-sub-connect3"
-              class="capitalize hidden text-base left-36 w-full text-center font-medium flex-col space-y-2 text-vdBlue px-8 mt-5 py-5 rounded-md bg-[#F1F1F1]"
-            >
-              <li><a href="#">contact</a></li>
-              <li><a href="#">newsletter</a></li>
-              <li><a href="#">linkedIn</a></li>
-            </ul>
-            <div
-              class="flex border-t w-full mt-3 border-black gap-1 flex-col lg:hidden"
-            >
-              <a
-                href="#"
-                class="text-vdBlue mt-5 font-bold font-overpass text-center capitalize p-3 px-6 py-2"
-                >login</a
-              >
-              <a
-                href="#"
-                class="font-medium text-center w-[50%] capitalize text-white rounded-full bg-gradient-to-r mx-auto from-vlRed to-lRed p-3 px-7 py-3"
-                >sign up</a
-              >
-            </div>
-          </ul>
-        </div>
-      </div>
-    </header> -->
-    <header class="w-full absolute z-50">
-      <nav
-        class="w-full bg-transparent container mx-auto left-0 right-0 top-0 py-4 px-4 z-50"
-      >
-        <div
-          class="flex items-center py-2 justify-between px-7 lg:px-10 relative"
+          class="flex items-center flex-wrap justify-between px-7 lg:px-10 relative"
         >
           <div class="flex space-x-16">
             <img src="./images/logo.svg" alt="blogr logo" />
@@ -331,45 +175,6 @@
             </div>
           </ul>
         </div>
-        <!-- <ul
-            class="hidden lg:flex capitalize space-x-11 xl:space-x-16 2xl:space-x-20"
-          >
-            <li>
-              <a
-                href="#"
-                class="text-dGrayishBlue transition duration-200 ease-in-out hover:text-softRed text-base font-semibold"
-                >home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-dGrayishBlue transition duration-200 ease-in-out hover:text-softRed text-base font-semibold"
-                >new</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-dGrayishBlue transition duration-200 ease-in-out hover:text-softRed text-base font-semibold"
-                >popular</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-dGrayishBlue transition duration-200 ease-in-out hover:text-softRed text-base font-semibold"
-                >trending</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-dGrayishBlue transition duration-200 ease-in-out hover:text-softRed text-base font-semibold"
-                >categories</a
-              >
-            </li>
-          </ul> -->
       </nav>
     </header>
     <!-- hero start -->

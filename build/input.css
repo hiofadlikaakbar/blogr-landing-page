@@ -1,10 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+  height: -webkit-fill-available;
+}
 body {
   overflow-x: hidden;
   @apply text-base;
   @apply text-[#4b5862];
+  height: -webkit-fill-available;
 }
 
 .up {
@@ -12,7 +16,7 @@ body {
 }
 
 .fixed-nav {
-  @apply fixed bg-gradient-to-r from-vlRed to-lRed w-full z-50;
+  @apply fixed bg-gradient-to-r from-vlRed to-lRed top-0  z-50;
 }
 
 .hero {
